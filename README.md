@@ -1,4 +1,8 @@
 # Barcode generation library for Dart and flutter
+# https://pub.dev/packages/barcode
+# [live demo](https://davbfr.github.io/dart_barcode/#/)
+# https://github.com/DavBfr/dart_barcode.git
+# git@github.com:sramos30/dart_barcode_generator.git
 
 ![Dart CI](https://github.com/DavBfr/dart_barcode/workflows/Dart%20CI/badge.svg)
 [![pub package](https://img.shields.io/pub/v/barcode.svg)](https://pub.dartlang.org/packages/barcode)

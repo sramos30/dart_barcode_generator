@@ -1,4 +1,9 @@
 # barcode
+## https://pub.dev/packages/barcode
+## https://github.com/DavBfr/dart_barcode/tree/master/barcode
+## https://github.com/DavBfr/dart_barcode
+## https://pub.dev/packages/barcode/install
+
 
 Barcode generation library for Dart that can generate generic drawing operations for any backend.
 
