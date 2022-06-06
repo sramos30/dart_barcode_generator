@@ -13,13 +13,23 @@ void buildBarcode(
   double? fontHeight,
 }) {
   // Create an image
-  final image = Image(128, 128);
+  final image = Image(148, 148);
 
   // Fill it with a solid color (white)
   fill(image, getColor(255, 255, 255));
 
   // Draw the barcode
-  drawBarcode(image, bc, data, font: arial_24);
+  drawBarcode(
+    image,
+    bc,
+    data,
+    font: arial_24,
+    x: 10,
+    y: 10,
+    width: 128,
+    height: 128,
+    color: 0xff000000,
+  );
 
   filename ??= data
       .replaceAll(RegExp(r'\|'), '_')
@@ -46,127 +56,6 @@ void buildBarcode(
 }
 
 void main() {
-//  buildBarcode(
-//    Barcode.code39(),
-//    'CODE 39',
-//  );
-//
-//  buildBarcode(
-//    Barcode.code93(),
-//    'CODE 93',
-//  );
-//
-//  buildBarcode(
-//    Barcode.code128(useCode128B: false, useCode128C: false),
-//    'BARCODE\t128',
-//    filename: 'code-128a',
-//  );
-//
-//  buildBarcode(
-//    Barcode.code128(useCode128A: false, useCode128C: false),
-//    'Barcode 128',
-//    filename: 'code-128b',
-//  );
-//
-//  buildBarcode(
-//    Barcode.code128(useCode128A: false, useCode128B: false),
-//    '0123456789',
-//    filename: 'code-128c',
-//  );
-//
-//  buildBarcode(
-//    Barcode.gs128(),
-//    '(420)22345(56780000000001)',
-//  );
-//
-//  buildBarcode(
-//    Barcode.itf14(),
-//    '1540014128876',
-//  );
-//
-//  buildBarcode(
-//    Barcode.itf16(),
-//    '154001412887678',
-//  );
-//
-//  buildBarcode(
-//    Barcode.ean13(drawEndChar: true),
-//    '590123412345',
-//  );
-//
-//  buildBarcode(
-//    Barcode.ean8(drawSpacers: true),
-//    '9638507',
-//    width: 100,
-//  );
-//
-//  buildBarcode(
-//    Barcode.ean2(),
-//    '05',
-//    width: 40,
-//  );
-//
-//  buildBarcode(
-//    Barcode.ean5(),
-//    '52495',
-//    width: 60,
-//  );
-//
-//  buildBarcode(
-//    Barcode.isbn(drawEndChar: true),
-//    '978316148410',
-//  );
-//
-//  buildBarcode(
-//    Barcode.upcA(),
-//    '98765432109',
-//  );
-//
-//  buildBarcode(
-//    Barcode.upcE(),
-//    '06510000432',
-//    width: 100,
-//  );
-//
-//  buildBarcode(
-//    Barcode.telepen(),
-//    'Telepen',
-//  );
-//
-//  buildBarcode(
-//    Barcode.codabar(explicitStartStop: true),
-//    'A1234-5678B',
-//  );
-//
-//  buildBarcode(
-//    Barcode.pdf417(),
-//    'PDF417',
-//    height: 30,
-//  );
-//
-//  buildBarcode(
-//    Barcode.dataMatrix(),
-//    'Datamatrix',
-//    height: 200,
-//  );
-//
-//  buildBarcode(
-//    Barcode.aztec(),
-//    'Aztec',
-//    height: 200,
-//  );
-//
-//  buildBarcode(
-//    Barcode.rm4scc(),
-//    'RM4SCC',
-//    height: 50,
-//    fontHeight: 30,
-//  );
-//
-//  buildBarcode(
-//    Barcode.itf(),
-//    '987234',
-//  );
   final codes = [
     'http://www.fazenda.pr.gov.br/nfce/qrcode?p=41190577044618004680650030005407651427626932|2|1|1|67DBCC882E5827246AB0F6AD1CEB433D099D9B0C',
     'http://www.fazenda.pr.gov.br/nfce/qrcode?p=41190912103208000115650010000256341000846876|2|1|1|3031C1F7C7D1A1C9C4363C668F02444003374EA2',

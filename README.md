@@ -4,6 +4,12 @@
 # https://github.com/DavBfr/dart_barcode.git
 # git@github.com:sramos30/dart_barcode_generator.git
 
+        % git branch -a  
+  
+        * gerar-nfe-qrcode
+        master
+        gh-pages
+  
 ![Dart CI](https://github.com/DavBfr/dart_barcode/workflows/Dart%20CI/badge.svg)
 [![pub package](https://img.shields.io/pub/v/barcode.svg)](https://pub.dartlang.org/packages/barcode)
 [![pub package](https://img.shields.io/pub/v/barcode_widget.svg)](https://pub.dartlang.org/packages/barcode_widget)

@@ -1,14 +1,10 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/sergioramos/dev/dev-flutter/dart_barcode'
+make: Entering directory `/Users/sergioramos/dev/dev-flutter/dart_barcode_generator'
 cd image; /Users/sergioramos/dev/dev-flutter/flutter/bin/dart run pubspec_extract -s "../image/pubspec.yaml" -d "../image/lib/src/pubspec.dart"
- 
 cd demo; /Users/sergioramos/dev/dev-flutter/flutter/bin/flutter create -t app --no-overwrite --org net.nfet --project-name demo .
 rm -rf demo/test
- 
 cd flutter/example; /Users/sergioramos/dev/dev-flutter/flutter/bin/flutter create -t app --no-overwrite --org net.nfet --project-name example .
 rm -rf flutter/example/test
- 
 /Users/sergioramos/dev/dev-flutter/flutter/bin/dart format --fix demo/lib/barcode_info.dart demo/lib/barcode.dart demo/lib/barcode_error.dart demo/lib/main.dart demo/lib/generated_plugin_registrant.dart demo/lib/download.dart demo/lib/settings_widgets.dart demo/lib/barcode_conf.dart demo/lib/code.dart demo/lib/settings.dart image/test/image_test.dart image/bin/barcode.dart image/example/main.dart image/lib/barcode_image.dart image/lib/src/barcode.dart image/lib/src/pubspec.dart flutter/test/widget_test.dart flutter/example/lib/main.dart flutter/lib/barcode_widget.dart flutter/lib/src/widget.dart flutter/lib/src/painter.dart barcode/test/code93_test.dart barcode/test/code39_test.dart barcode/test/mecard_test.dart barcode/test/upce_test.dart barcode/test/codabar_test.dart barcode/test/telepen_test.dart barcode/test/golden_utils.dart barcode/test/ean_test.dart barcode/test/itf_test.dart barcode/test/qrcode_test.dart barcode/test/aztec_test.dart barcode/test/generic_test.dart barcode/test/rm4scc_test.dart barcode/test/code128_test.dart barcode/example/main.dart barcode/lib/barcode.dart barcode/lib/src/upce.dart barcode/lib/src/itf16.dart barcode/lib/src/barcode_types.dart barcode/lib/src/rm4scc.dart barcode/lib/src/ean.dart barcode/lib/src/code93.dart barcode/lib/src/barcode_1d.dart barcode/lib/src/aztec.dart barcode/lib/src/barcode_maps.dart barcode/lib/src/qrcode.dart barcode/lib/src/itf.dart barcode/lib/src/datamatrix.dart barcode/lib/src/barcode.dart barcode/lib/src/barcode_exception.dart barcode/lib/src/reedsolomon.dart barcode/lib/src/barcode_2d.dart barcode/lib/src/pdf417_codewords.dart barcode/lib/src/barcode_operations.dart barcode/lib/src/isbn.dart barcode/lib/src/pdf417.dart barcode/lib/src/upca.dart barcode/lib/src/telepen.dart barcode/lib/src/barcode_hm.dart barcode/lib/src/ean13.dart barcode/lib/src/ean2.dart barcode/lib/src/mecard.dart barcode/lib/src/code39.dart barcode/lib/src/code128.dart barcode/lib/src/itf14.dart barcode/lib/src/ean5.dart barcode/lib/src/codabar.dart barcode/lib/src/ean8.dart
- 
-make: Leaving directory `/Users/sergioramos/dev/dev-flutter/dart_barcode'
+make: Leaving directory `/Users/sergioramos/dev/dev-flutter/dart_barcode_generator'
  
